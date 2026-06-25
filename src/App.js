@@ -28,7 +28,7 @@ function App() {
   const [rightWorldCup, setRightWorldCup] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/teams")
+    fetch("https://worldcup-4lox.onrender.com/teams")
       .then((r) => r.json())
       .then((data) => {
         const clean = Array.isArray(data)
@@ -51,10 +51,10 @@ function App() {
     if (!L || !R) return;
 
     const [la, ra, lw, rw] = await Promise.all([
-      fetch(`http://localhost:3001/team/${L.id}`).then((r) => r.json()),
-      fetch(`http://localhost:3001/team/${R.id}`).then((r) => r.json()),
-      fetch(`http://localhost:3001/worldcup/${L.id}`).then((r) => r.json()),
-      fetch(`http://localhost:3001/worldcup/${R.id}`).then((r) => r.json()),
+      fetch(`https://worldcup-4lox.onrender.com/team/${L.id}`).then((r) => r.json()),
+      fetch(`https://worldcup-4lox.onrender.com/team/${R.id}`).then((r) => r.json()),
+      fetch(`https://worldcup-4lox.onrender.com/worldcup/${L.id}`).then((r) => r.json()),
+      fetch(`https://worldcup-4lox.onrender.com/worldcup/${R.id}`).then((r) => r.json()),
     ]);
 
     setLeftAll(Array.isArray(la) ? la : []);
