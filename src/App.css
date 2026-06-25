@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef3f8;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 25px;
+  color: #16001c;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 5px;
+}
+
+.selector {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.teamBox {
+  background: white;
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+.logo {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+}
+
+button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: #24002d;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.analyze {
+  font-size: 16px;
+  padding: 16px 28px;
+}
+
+.side {
+  font-weight: bold;
+  color: #6b0878;
+  letter-spacing: 3px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.panel {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+.panelHead {
+  background: linear-gradient(135deg, #27002d, #6d0878);
+  color: white;
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.panelHead img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+td:last-child {
+  text-align: right;
+  color: #6d0878;
+}
+
+.tabs {
+  margin-top: 20px;
+}
+
+.back {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
